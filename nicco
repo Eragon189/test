@@ -1,5 +1,15 @@
 <!doctype html>
 <head>
+<style>
+#text {
+  color: #42E0CD;
+}
+
+#outPut {
+  color: #41CEE2;
+}
+
+</style>
 </head>
 <body>
 <div class="outPutDiv" id="class">
