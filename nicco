@@ -1,4 +1,29 @@
 <!doctype html>
+<head>
+</head>
 <body>
-<div></div>
+<div class="outPutDiv" id="class">
+  <h1 id="text">Parabola Caculator</h1>
+  <a id="outPut">Out put here:</a>
+</div>
+<script>
+var howLong = prompt("Enter the amount of pairs you want:");
+var changeRate = prompt("Enter the change rate:");
+var focolPoint = prompt("Enter the height the focal point:");
+//prompt you as a data inser method
+let x = 1;
+for (var i = 0; i < howLong; i++) {
+  //repets it howLong times
+  var y = (x ** 2) / (4 * focolPoint);
+  //cauclaets y
+  document.getElementById("outPut").innerHTML += "<br>(" + x + "," + y + ")";
+  //inputs y and x to HTML as cordenet point
+  var numCnangeRate = parseFloat(changeRate)
+  //makes changeRate a number
+  x = x + numCnangeRate
+  x = (Math.floor(x * (1000000000000000))) / (1000000000000000)
+  //round the number
+  //the big number it to make it more acuret
+}
+</script>
 <body>
